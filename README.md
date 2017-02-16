@@ -7,4 +7,7 @@ About me (Rudy) page
 Using Jekyll and Solo theme
 
 ## About Me
-Software developer
+Just a guy learning how to code
+
+## Future Plans
+Create a startup
