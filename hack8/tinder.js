@@ -1,7 +1,7 @@
 // Tinderscript
 // self-explanatory...
 // Looping thru user array to find user that matched a criteria.
-// if certain criteria is matched, the user will be swiped right or super liked, if not it will be swiped left.
+// if user like , the user will be swiped right or super liked, if not it will be swiped left.
 
 
 /*
@@ -24,7 +24,8 @@ var User = function(name, age, sex, location) {
   this.location = location;
 
   this.profile_print = function() {
-    console.log("Name: " + this.name + ", Age: " + this.age + ", Sex: " + this.sex + ", Location: " + this.location );
+    //console.log("Name: " + this.name + ", Age: " + this.age + ", Sex: " + this.sex + ", Location: " + this.location );
+    return "Name: " + this.name + ", Age: " + this.age + ", Sex: " + this.sex + ", Location: " + this.location;
   }
 }
 
@@ -55,8 +56,6 @@ girls.push(user04);
 girls.push(user05);
 
 //
-console.log("Girls (" + girls.length + ")");
-print_user_array(girls);
 
 // create array for girls that you like, don't like, and superlike
 var like = [];
@@ -65,67 +64,40 @@ var superlike = [];
 
 // loop girls array
 // only swipe right if girl's location is in Surabaya
-for (var i = 0 ; i < girls.length ; i++ ) {
 
-//     console.log(girls[i].name);
-    if (girls[i].location == 'Surabaya') {
-      // swipe right :)
+// user enter his name
+var username = prompt("Hello, what is your name?");
+alert("Instruction: \nto swipe RIGHT, enter '1' \nto swipe LEFT, enter '2' \nto Super Like, enter'3' \nto skip user just press enter \n\nGood luck, " + username + "!");
+
+// loop girls array
+for (var i=0 ; i < girls.length ; i++) {
+  var ans = prompt(girls[i].profile_print() + "\n\nSwipe Right: 1   Swipe Left: 2   Super Like: 3");
+    // r for swipe right
+    // l for swipe LEFT
+    // s for superlike
+
+    if (ans == '1')
       like.push(girls[i]);
-    }
-    else if (girls[i].location == 'Malang') {
-      // swipe right :)
-      superlike.push(girls[i]);
-    }
-    else {
-      // swipe left :(
+    else if (ans == '2')
       notlike.push(girls[i]);
-    }
+    else if (ans == '3')
+      superlike.push(girls[i]);
 }
 
-// print girls that were liked
-console.log("Like (" + like.length + ")");
-print_user_array(like);
-
-console.log("SUPER Like (" + superlike.length + ")");
-print_user_array(superlike);
-
-// print girls that were not liked
-console.log("NOT Like (" + notlike.length + ")");
-print_user_array(superlike);
-
-
-var haha = {
-  "girls": [
-  {
-    "name": "Nina",
-    "age" : 22,
-    "sex" : "Female",
-    "location" : "Jakarta",
-    "liked" : false
-  },
-  {
-    "name": "Asuka",
-    "age" : 21,
-    "sex" : "Female",
-    "location" : "Tokyo",
-    "liked" : false
-
-  }
-
-  ]
+alert("Hi " + username + ", here is your result.")
+alert("Hi " + username + ", you have liked " + like.length + " user(s)");
+for (i = 0 ; i < like.length ; i++ ) {
+    alert((i+1) + ". " + like[i].profile_print() );
 }
 
-console.log(haha.girls.length);
-
-for (var i = 0 ; i < haha.girls.length ; i++) {
-  var ans = prompt(haha.girls[i].name + "?");
-  if (ans == "y") {
-    haha.girls[i].liked = true;
-  }
+alert("Hi " + username + ", you didn't like " + notlike.length + " user(s)");
+for (i = 0 ; i < notlike.length ; i++ ) {
+    alert((i+1) + ". " + notlike[i].profile_print() );
 }
 
-for (var i = 0 ; i < haha.girls.length ; i++) {
-  if(haha.girls[i].liked) {
-    alert("name: " + haha.girls[i].name + ", age: " + haha.girls[i].age);
-  }
+alert("Hi " + username + ", you have Superliked " + superlike.length + " user(s)");
+for (i = 0 ; i < superlike.length ; i++ ) {
+    alert((i+1) + ". " + superlike[i].profile_print() );
 }
+
+alert("Bye " + username +"!");
