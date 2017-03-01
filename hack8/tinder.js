@@ -67,20 +67,20 @@ var superlike = [];
 
 // user enter his name
 var username = prompt("Hello, what is your name?");
-alert("Instruction: \nto swipe RIGHT, enter 'r' \nto swipe LEFT, enter 'l' \nto Superlike, enter's' \nto skip user just press enter \n\nGood luck, " + username + "!");
+alert("Instruction: \nto swipe RIGHT, enter '1' \nto swipe LEFT, enter '2' \nto Super Like, enter'3' \nto skip user just press enter \n\nGood luck, " + username + "!");
 
 // loop girls array
 for (var i=0 ; i < girls.length ; i++) {
-  var ans = prompt(girls[i].profile_print());
+  var ans = prompt(girls[i].profile_print() + "\n\nSwipe Right: 1   Swipe Left: 2   Super Like: 3");
     // r for swipe right
     // l for swipe LEFT
     // s for superlike
 
-    if (ans == 'r')
+    if (ans == '1')
       like.push(girls[i]);
-    else if (ans == 'l')
+    else if (ans == '2')
       notlike.push(girls[i]);
-    else if (ans == 's')
+    else if (ans == '3')
       superlike.push(girls[i]);
 }
 
@@ -99,3 +99,5 @@ alert("Hi " + username + ", you have Superliked " + superlike.length + " user(s)
 for (i = 0 ; i < superlike.length ; i++ ) {
     alert((i+1) + ". " + superlike[i].profile_print() );
 }
+
+alert("Bye " + username +"!");
