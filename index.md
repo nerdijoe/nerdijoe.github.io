@@ -4,9 +4,10 @@ layout: default
 
 ![Rudy Wahjudi](/assets/images/rudy.jpeg){:.round_pic}
 
-Hi! My name is Rudy Wahjudi. I'm a software developer from Indonesia. I code in Ruby on Rails and currently learning Python on my spare time.
+Hi! My name is Rudy Wahjudi. I'm a software developer from Indonesia. I code in Node.js, Javascript, Python, Ruby, Java, and C++. Some of the frameworks that I have worked on: React.js, React Native, Vue.js, Flask, Spring, Spring Boot and some Machine Learning libraries (Scikit Learn, Pandas).
 
-I like american football, basketball and ultimate frisbee.
+I like american football 🏈, basketball 🏀 and ultimate frisbee 💿.
+
 
 ## My Projects
 
