@@ -4,7 +4,7 @@ layout: default
 
 ![Rudy Wahjudi](/assets/images/rudy.jpeg){:.round_pic}
 
-Hi! My name is Rudy. I code in Node.js, Javascript, Python, Ruby, Java, and C++. Some of the frameworks that I have worked on: React.js, React Native, Vue.js, Flask, Spring, Spring Boot, Ruby on Rails and some machine learning libraries.
+Hi! My name is Rudy. I code in Node.js, Javascript, Python, Ruby, Java, and C++. Frameworks and tools that I have worked on: React.js, React Native, Vue.js, Flask, Spring, Ruby on Rails, Docker, Kubernetes, AWS, GCP, and some machine learning libraries.
 
 I like american football 🏈, basketball 🏀 and ultimate frisbee 💿.
 
