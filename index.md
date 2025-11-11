@@ -30,4 +30,4 @@ to distribute rewards from 1-2 weeks to real time.
 
 ## Contact me
 
-Rudy Wahjudi ([email](mailto:{{ site.email }})/[gitHub](http://github.com/nerdijoe)/[linkedin](https://www.linkedin.com/in/nerdijoe/)).
+Rudy Wahjudi ([gitHub](http://github.com/nerdijoe)/[linkedin](https://www.linkedin.com/in/nerdijoe/)).
